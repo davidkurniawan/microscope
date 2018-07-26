@@ -1,0 +1,8 @@
+[15-Aug-2017 21:31:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Polyfill\Mbstring\iconv_strpos() in /home/mikroskop/public_html/master/vendor/symfony/polyfill-mbstring/Mbstring.php:363
+Stack trace:
+#0 /home/mikroskop/public_html/master/vendor/symfony/polyfill-mbstring/bootstrap.php(32): Symfony\Polyfill\Mbstring\Mbstring::mb_strpos(NULL, '/json', 0, 'UTF-8')
+#1 /home/mikroskop/public_html/master/vendor/laravel/framework/src/Illuminate/Support/Str.php(94): mb_strpos(NULL, '/json')
+#2 /home/mikroskop/public_html/master/vendor/laravel/framework/src/Illuminate/Http/Concerns/InteractsWithContentTypes.php(34): Illuminate\Support\Str::contains(NULL, Array)
+#3 /home/mikroskop/public_html/master/vendor/laravel/framework/src/Illuminate/Http/Request.php(333): Illuminate\Http\Request->isJson()
+#4 /home/mikroskop/public_html/master/vendor/laravel/framework/src/Illuminate/Http/Request.php(361): Illuminate\Http\Request->getInputSource()
+#5 /home/mikroskop/public_html/master/vendor/laravel/framework/src/Illuminate/Http/Request.php(59): I in /home/mikroskop/public_html/master/vendor/symfony/polyfill-mbstring/Mbstring.php on line 363
